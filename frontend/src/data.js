@@ -4,43 +4,50 @@ const data={
             _id:'1',
             name:'ECE',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:1
         },
         {
             _id:'2',
             name:'BT',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:0
         },
         {
             _id:'3',
             name:'COE',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:0
         },
         {
             _id:'4',
             name:'ICE',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:0
         },
         {
             _id:'5',
             name:'IT',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:0
         },
         {
             _id:'6',
             name:'ME',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:0
         },
         {
             _id:'7',
             name:'MPAE',
             image:'/images/p1.jpg',
-            description:'cotton'
+            description:'cotton',
+            countInStock:0
         },
     ]
 };
