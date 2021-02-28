@@ -1,49 +1,60 @@
+import bcrypt from 'bcryptjs';
+
 const data={
+    users:[
+        {
+        name:'Anmol',
+        email:'anmol.garg98@gmail.com',
+        password:bcrypt.hashSync('meanmolme',8),
+        isAdmin:true,
+        rollNo:'2017UEC2133'
+        },
+    {
+        name:'John',
+        email:'abc@example.com',
+        password:bcrypt.hashSync('123',8),
+        isAdmin:false,
+        rollNo:'NA'
+        
+    }],
     products:[
         {
-            _id:'1',
             name:'ECE',
             image:'/images/p1.jpg',
             description:'cotton',
             countInStock:1
         },
         {
-            _id:'2',
             name:'BT',
             image:'/images/p1.jpg',
             description:'cotton',
             countInStock:1
         },
         {
-            _id:'3',
             name:'COE',
             image:'/images/p1.jpg',
             description:'cotton',
             countInStock:0
         },
         {
-            _id:'4',
             name:'ICE',
             image:'/images/p1.jpg',
             description:'cotton',
             countInStock:0
         },
         {
-            _id:'5',
             name:'IT',
             image:'/images/p1.jpg',
             description:'cotton',
             countInStock:0
         },
         {
-            _id:'6',
             name:'ME',
             image:'/images/p1.jpg',
             description:'cotton',
             countInStock:0
         },
         {
-            _id:'7',
             name:'MPAE',
             image:'/images/p1.jpg',
             description:'cotton',
