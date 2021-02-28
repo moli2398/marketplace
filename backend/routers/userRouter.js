@@ -32,4 +32,23 @@ userRouter.post('/signin',expressAsyncHandler(async(req,res)=>{
     }
     res.status(401).send({message:'Invalid email or password'});
 }));
+
+userRouter.post('/register',expressAsyncHandler(async(req,res)=>{
+    const user = new User({
+        name:req.body.name,
+        email:req.body.email,
+        password: bcrypt.hashSync(req.body.password,8),
+        rollNo:req.body.rollNo
+    });
+    const createdUser = await user.save();
+    res.send({
+        _id: createdUser._id,
+        name:createdUser.name,
+        email:createdUser.email,
+        isAdmin:createdUser.isAdmin,
+        rollNo:createdUser.rollNo,
+        token:generateToken(createdUser)
+    });
+}));
+
 export default userRouter;
