@@ -48,6 +48,7 @@ export const register = (name,rollNo,email,password) => async(dispatch) =>{
 export const signout = ()=>(dispatch)=>{
     localStorage.removeItem('userInfo');
     localStorage.removeItem('cartItems');
+    localStorage.removeItem('orderDetails');
     dispatch({
         type: USER_SIGNOUT
     });
